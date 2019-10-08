@@ -1,4 +1,8 @@
-###First, let's create an equation for a straight line; this is in 'logit space' and the equation is y=mx+b
+#test2 aurora
+
+
+
+##First, let's create an equation for a straight line; this is in 'logit space' and the equation is y=mx+b
 b=0
 m=1
 x=seq(from=-10, to=10, by =0.1)
@@ -15,8 +19,7 @@ y=NULL
 for(i in 1:length(b)){
 	y1=m*x+b[i]
 	y=c(y, y1)
-}
-
+TEST
 
 #Create data frame to expand b
 b.exp=NULL
@@ -30,15 +33,12 @@ dat=data.frame(y=y, x=rep(x, length(b)), b=b.exp)
 head(dat)
 dat$prop=plogis(dat$y)
 
-plot(prop~x, data=dat, type='n', xlab = 'did this work', ylab = 'WOOHOOO')
+plot(prop~x, data=dat, type='n')
 for(i in 1:length(unique(dat$b))){
 	lines(prop~x, data=dat[dat$b==unique(dat$b)[i],], col=i, lwd=3)
 }
 
-<<<<<<< HEAD
 >>>>>>> Changing-intercept
 #hello
 #I don't know what I'm doing
 #test 2
-=======
->>>>>>> 440aa6df0d265261c1ddbb5b57af73bf94ee3089
