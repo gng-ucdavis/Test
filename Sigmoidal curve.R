@@ -16,8 +16,6 @@ for(i in 1:length(b)){
 	y1=m*x+b[i]
 	y=c(y, y1)
 }
-<<<<<<< HEAD
-=======
 
 #Create data frame to expand b
 b.exp=NULL
@@ -31,9 +29,7 @@ dat=data.frame(y=y, x=rep(x, length(b)), b=b.exp)
 head(dat)
 dat$prop=plogis(dat$y)
 
-plot(prop~x, data=dat, type='n')
+plot(prop~x, data=dat, type='n', xlab = 'I DID IT', ylab = 'WOOHOOO')
 for(i in 1:length(unique(dat$b))){
 	lines(prop~x, data=dat[dat$b==unique(dat$b)[i],], col=i, lwd=3)
 }
-
->>>>>>> Changing-intercept
