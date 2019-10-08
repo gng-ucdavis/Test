@@ -15,9 +15,7 @@ y=NULL
 for(i in 1:length(b)){
 	y1=m*x+b[i]
 	y=c(y, y1)
-}
-<<<<<<< HEAD
-=======
+TEST
 
 #Create data frame to expand b
 b.exp=NULL
