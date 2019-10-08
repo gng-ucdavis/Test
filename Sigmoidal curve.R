@@ -30,13 +30,8 @@ dat=data.frame(y=y, x=rep(x, length(b)), b=b.exp)
 head(dat)
 dat$prop=plogis(dat$y)
 
-plot(prop~x, data=dat, type='n')
+plot(prop~x, data=dat, type='n', xlab = 'did this work', ylab = 'WOOHOOO')
 for(i in 1:length(unique(dat$b))){
 	lines(prop~x, data=dat[dat$b==unique(dat$b)[i],], col=i, lwd=3)
 }
 
-<<<<<<< HEAD
-=======
->>>>>>> Changing-intercept
-#hello
->>>>>>> 82a0a557227752497b6d5ed48f493993bd285b38
