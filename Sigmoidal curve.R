@@ -39,3 +39,4 @@ for(i in 1:length(unique(dat$b))){
 >>>>>>> Changing-intercept
 #hello
 #I don't know what I'm doing
+#test 2
