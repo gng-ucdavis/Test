@@ -34,5 +34,4 @@ for(i in 1:length(unique(dat$b))){
 	lines(prop~x, data=dat[dat$b==unique(dat$b)[i],], col=i, lwd=3)
 }
 
-HELLO MEL
 GOODBYE MEL
